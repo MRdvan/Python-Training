@@ -82,7 +82,7 @@ print(np.sqrt(a))
 print(np.square(a)) # a**2
 
 
-print(np.add(a,a))# same as a+a
+print(np.add(a,a))# same as a+a+
 
 
 # %% indexing and slicing
@@ -112,12 +112,13 @@ print(array1[:,-1])
 
 # %%
 # shape manipulation
-array = np.array([[1,2,3],[4,5,6],[7,8,9]])
+array = np.array([[1,2,3],[4,5,6]])
 
 # flatten
-a = array.ravel()
+a = array.ravel() #put it in a vector shape
 
-array2 = a.reshape(3,3)
+array2 = a.reshape(3,2)#changing shape but not saving it in array2
+array2.resize(3,2)#chaning size and saving on array2
 
 arrayT = array2.T
 
@@ -156,15 +157,15 @@ array = np.array(liste) #np.array
 
 liste2 = list(array)
 
-a = np.array([1,2,3])
+a = np.array([1,2,3]) # allocated [1,2,3] in memory and a is the pointer to that location
 
-b = a
+b = a # b pointing that locaiton too
 b[0] = 5
-c = a
+c = a # c pointing that locaiton too
 
 d =  np.array([1,2,3])
 
-e = d.copy()
+e = d.copy() #pointing its copy so wont change main array in memory
 
 f = d.copy()
 
