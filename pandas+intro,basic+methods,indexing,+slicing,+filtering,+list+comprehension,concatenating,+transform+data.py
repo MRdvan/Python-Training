@@ -124,7 +124,7 @@ dataFrame1["list_comp"] = [ each*2 for each in dataFrame1.age]
 # apply()
 
 def multiply(age):
-    return age*2
+     return age*2
     
 dataFrame1["apply_metodu"] = dataFrame1.age.apply(multiply)
 

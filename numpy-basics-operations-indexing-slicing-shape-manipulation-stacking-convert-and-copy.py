@@ -118,6 +118,7 @@ array = np.array([[1,2,3],[4,5,6]])
 a = array.ravel() #put it in a vector shape
 
 array2 = a.reshape(3,2)#changing shape but not saving it in array2
+array2 = a.reshape(3,-1) # -1=2 eşit oluyor. size ına tamamlıyor.
 array2.resize(3,2)#chaning size and saving on array2
 
 arrayT = array2.T
@@ -169,7 +170,9 @@ e = d.copy() #pointing its copy so wont change main array in memory
 
 f = d.copy()
 
-
+#python passes mutable object as references, so function calls make no copy
+#a is b returns true is they are same object
+# id(a) returns a's id
 
 
 
