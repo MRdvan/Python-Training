@@ -1,4 +1,4 @@
 # Python-Training
 
-*training on python,numpy,pandas 
-*making practice on udacity's mini projects
+1. Training on python,numpy,pandas 
+1. Practice on udacity's mini projects
